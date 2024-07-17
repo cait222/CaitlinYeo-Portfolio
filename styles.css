@@ -1,8 +1,9 @@
-/* color palette: 
-    beige: #FDF0D1
-    dusty rose: #AC7D88
-    plum purple: #85586F
-    deep purple: #643843 
+/* color palette:
+    brown: #6F5D44
+    nude: #E5BB89
+    white: #FFFFFF
+    light blue: #B4CDE6
+    sand: #CCC5B7 
 */
 
 html,
@@ -17,18 +18,34 @@ body {
 }
 
 #main {
-    padding-bottom: 50px;
+    background-color: #FFFFFF;
 }
 
 /********** NAVIGATION BAR **********/
 
 header {
     font-family: "Roboto";
+    background-color: #6F5D44;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
+    color: #B4CDE6;
 }
 
 /********** ABOUT SECTION **********/
 .about {
     margin-top: 80px;
+}
+
+.personalImage {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px #B4CDE6;
 }
 
 /********** SKILLS SECTION **********/
@@ -38,22 +55,161 @@ header {
     justify-content: center;
     text-align: center;
     padding: 0 30px 0 30px;
+    color: #6F5D44;
 }
 
 img.skillPicture {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 /********** PROJECTS SECTION **********/
-
-img.projectPicture {
-    height: 220px;
-    width: 420px;
-    object-fit: cover;
+#projectSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCC5B7;
 }
 
-/********** NO LINK SECTION **********/
+#projSectionHeader {
+    color: #FFFFFF;
+}
+
+img.projectPicture {
+    object-fit: cover;
+    height: 100%;
+}
+
+img.projectMainPicture {
+    width: 300px;
+}
+
+.btn:hover {
+    background-color: #B4CDE6;
+    color: #FFFFFF;
+}
+
+/********** PROJECTS PAGES **********/
+
+#mainProjectPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCC5B7;
+    color: #6F5D44;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.colorContainer {
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .flex-container2 {
+        flex-direction: column;
+    }
+}
+
+.projectHead {
+    justify-content: space-between;
+}
+
+.projectIntro {
+    align-self: center;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+.projectTitle,
+.projectSkills {
+    text-align: left;
+}
+
+.projectTitle {
+    color: #E5BB89;
+}
+
+.projectSkills {
+    display: flex;
+}
+
+.projectSkillPicture {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.sectionBody {
+    margin: 0px;
+}
+
+.projectImageGallery {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .projectImageGallery {
+        flex-direction: column;
+    }
+}
+
+img.projectImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .3s;
+    z-index: 0;
+}
+
+div.projectImage {
+    position: relative;
+}
+
+img.enlargedProjectImage {
+    width: 300px;
+}
+
+span.enlargedProjectImage {
+    position: absolute;
+    left: -9999px;
+    padding: 15px;
+    background-color: #6F5D44;
+    border-radius: 15px;
+}
+
+.projectImage:hover {
+    z-index: 50;
+}
+
+.projectImage:hover span.enlargedProjectImage {
+    top: -10px;
+    left: -50px;
+}
+
+/********** NO LINK PAGE **********/
 
 #noLink {
     text-align: center;
@@ -68,18 +224,35 @@ img.projectPicture {
 /********** TEXT ELEMENTS **********/
 
 h1 {
-    display: inline-block;
+    display: block;
     font-family: "Lora";
     font-size: 40px;
     margin: 0px;
     padding: 15px;
 }
 
+h1.myName {
+    display: inline-block;
+    color: #E5BB89;
+}
+
+h2,
 h3 {
     font-family: "Lora";
-    font-size: 20px;
     margin: 0px;
     padding: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2.sectionTitle {
+    padding: 0px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 p {
@@ -89,8 +262,23 @@ p {
     padding: 15px;
 }
 
+p.lead {
+    color: #6F5D44;
+}
+
+p.sectionBody {
+    padding: 0px;
+}
+
+p.imgCaption {
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
 footer {
     font-family: "Lora";
     text-align: center;
     font-size: 15px;
+    background-color: #CCC5B7;
+    color: #FFFFFF;
 }
