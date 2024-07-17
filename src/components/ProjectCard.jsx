@@ -15,7 +15,7 @@ function ProjectCard(props) {
                         <p className="card-text">{project.cardText}</p>
                         <div className="d-flex justify-content-between align-items-center">
                             <div className="btn-group">
-                                <button onClick={() => window.open(project.siteLink, "_blank")} type="button" className="btn btn-sm btn-outline-secondary">View Project</button>
+                                <button onClick={() => window.open(project.siteLink, "_self")} type="button" className="btn btn-sm btn-outline-secondary">View Project</button>
                                 {/* <button onClick={() => navigate(project.codeLink)} type="button" className="btn btn-sm btn-outline-secondary">View Code</button> */}
                             </div>
                         </div>

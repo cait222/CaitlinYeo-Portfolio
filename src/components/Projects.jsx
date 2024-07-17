@@ -34,9 +34,9 @@ let projectsList = [
 
 function Projects() {
     return (
-        <div id="projectSection" className="projects album py-3 bg-body-tertiary">
+        <div id="projectSection" className="projects album py-3">
             <div className="d-flex p-3 justify-content-center">
-                <h1>My Projects</h1>
+                <h1 id="projSectionHeader">My Projects</h1>
             </div>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">

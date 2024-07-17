@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer className="footer mt-auto py-3 bg-body-tertiary">
+        <footer className="footer mt-auto py-3">
             <div className="container">
-                <span className="text-body-secondary">Copyright &copy; 2024 Caitlin Yeo</span>
+                <span>Copyright &copy; 2024 Caitlin Yeo</span>
             </div>
         </footer>
     );
