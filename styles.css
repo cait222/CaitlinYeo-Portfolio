@@ -187,6 +187,14 @@ video.projectVideo {
     .projectImageGallery {
         flex-direction: column;
     }
+
+    div.projectImage {
+        align-self: center;
+    }
+
+    img.projectImage {
+        margin: 15px;
+    }
 }
 
 img.projectImage {
