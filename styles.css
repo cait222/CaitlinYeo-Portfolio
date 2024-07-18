@@ -166,6 +166,14 @@ img.projectMainPicture {
     margin: 10px;
 }
 
+div.projectVid {
+    max-width: 500px;
+}
+
+video.projectVideo {
+    width: 100%;
+}
+
 .sectionBody {
     margin: 0px;
 }
