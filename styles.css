@@ -84,6 +84,11 @@ img.projectMainPicture {
     width: 300px;
 }
 
+.btn {
+    color: #6F5D44;
+    border-color: #6F5D44;
+}
+
 .btn:hover {
     background-color: #B4CDE6;
     color: #FFFFFF;
@@ -253,6 +258,10 @@ h2.sectionTitle {
 
 h3 {
     font-size: 20px;
+}
+
+.card-title, .card-text {
+    color: #6F5D44;
 }
 
 p {
